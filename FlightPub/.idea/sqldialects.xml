@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/sql/1.CreateTables-Version1.2.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/3.UpdateFlightDates.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/4.AddUsers-Version1.2.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.1-Country.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.10.1.AA-BA.7312.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.10.2.BA-KL.1601.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.10.3.KL-LH.790.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.10.4.LH-QF.67.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.10.5.QF-VS.7320.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.10.6.VS-VS.7320.EndPrice.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.12-UpdateAvailabilityAndPrice.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.13-InsertAvailabilityFlightsPrice.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.14-ModifyTables.EndPopulateDb.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.2-Airlines.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.3-TicketClass.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.4-TicketType.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.5-PlaneType.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.6.1-Availability.A-DL.Eco.E.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.6.2-Availability.DL-EK.Fir.A.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.6.3-Availability.EK-LH.Bus.F.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.6.4-Availability.LH-QF.Fir.G.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.6.5-Availability.QF-QR.Pme.C.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.6.6-Availability.QR-VS.Fir.A.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.6.7-Availability.VS-Vs.Pme.E.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.6.8-Availability.VS-Vs.Eco.D.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.6.9-Availability.VS-Vs.Pme.F.EndAvailability.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.7-Destinations.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.8-Distances.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.1-Flights.AA-AC.Arrival.09.29.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.10-Flights.QF-QF.Arrival.09.24.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.11-Flights.QF-VS.Arrival.07.10.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.12-Flights.VS-VS.Arrival.01.03.EndFlights.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.2-Flights.AC-AY.Arrival.08.04.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.3-Flights.AY-EK.Arrival.10.08.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.4-Flights.EK-JL.Arrival.08.03.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.5-Flights.JL-JQ.Arrival.07.26.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.6-Flights.JQ-KL.Arrival.06.11.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.7-Flights.KL-LH.Arrival.08.07.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.8-Flights.LH-QF.Arrival.12.05.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/PopulateDb-1.2.9.9-Flights.QF-QF.Arrival.12.06.sql" dialect="MySQL" />
+  </component>
+</project>

@@ -1,0 +1,72 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+   http://www.springframework.org/schema/mvc
+   http://www.springframework.org/schema/mvc/spring-mvc.xsd
+   http://www.springframework.org/schema/data/jpa
+   http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+    <!-- You need to change this for your root package,
+    e.g. seng3150.groupX -->
+    <context:component-scan base-package="seng3150.group1" />
+
+    <!-- This tells Spring that it will find controllers through annotations -->
+    <mvc:annotation-driven />
+
+    <!-- This tells Spring where to find views (i.e. JSP files) -->
+    <mvc:view-resolvers>
+        <mvc:jsp prefix="/WEB-INF/views/"
+                 suffix=".jsp"
+                 view-class="org.springframework.web.servlet.view.JstlView" />
+    </mvc:view-resolvers>
+
+    <!-- This tells Spring that all files in the js and css directories
+    are static resources and do not need to be processed by a controller -->
+    <mvc:resources mapping="/js/**" location="/js/" />
+    <mvc:resources mapping="/css/**" location="/css/" />
+
+    <!-- Configure Entity Manager Factory so we can inject it into the DAO Classes -->
+    <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+
+    <!--Bean used to implement dao interfaces -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+
+    <!--JPA entity manager-->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="flightpub" />
+        <property name="jpaDialect">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaDialect" />
+        </property>
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="showSql" value="true" />
+                <property name="generateDdl" value="true" />
+                <property name="databasePlatform" value="org.hibernate.dialect.MySQL57Dialect" />
+            </bean>
+        </property>
+        <property name="persistenceUnitManager">
+            <bean class="org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager" />
+        </property>
+    </bean>
+
+    <!--Tells Spring where our dao interfaces which it needs to implement are -->
+    <jpa:repositories base-package="seng3150.group1.dao"/>
+
+    <!--Interceptor mapping (applied in order of listing here if multiple interceptors are called-->
+    <mvc:interceptors>
+        <!-- Interceptor to prevent acces to account pages if no user is logged in-->
+        <mvc:interceptor>
+            <mvc:mapping path="/account/**"/>
+            <bean id="loginInterceptor" class="seng3150.group1.interceptors.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+</beans>

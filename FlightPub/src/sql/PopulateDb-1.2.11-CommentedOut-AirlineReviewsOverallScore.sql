@@ -1,0 +1,52 @@
+-- LOCK TABLES `AirlineReviewsOverallScore` WRITE;
+-- /*!40000 ALTER TABLE `AirlineReviewsOverallScore` DISABLE KEYS */;
+
+-- INSERT INTO `AirlineReviewsOverallScore` (`AirlineCode`)
+-- VALUES
+-- 	('AA'),
+-- 	('AC'),
+-- 	('AF'),
+-- 	('AI'),
+-- 	('AM'),
+-- 	('AR'),
+-- 	('AY'),
+-- 	('BA'),
+-- 	('CA'),
+-- 	('CI'),
+-- 	('CO'),
+-- 	('CX'),
+-- 	('DJ'),
+-- 	('DL'),
+-- 	('EI'),
+-- 	('EK'),
+-- 	('IB'),
+-- 	('JL'),
+-- 	('JQ'),
+-- 	('KE'),
+-- 	('KL'),
+-- 	('LH'),
+-- 	('LY'),
+-- 	('MH'),
+-- 	('MS'),
+-- 	('MX'),
+-- 	('NA'),
+--  ('NW'),
+--  ('NZ'),
+-- 	('OS'),
+-- 	('PR'),
+-- 	('QF'),
+-- 	('QR'),
+-- 	('RJ'),
+-- 	('SA'),
+-- 	('SK'),
+-- 	('SQ'),
+-- 	('SU'),
+-- 	('TG'),
+-- 	('TK'),
+-- 	('TW'),
+-- 	('UA'),
+-- 	('VH'),
+-- 	('VS');
+
+-- /*!40000 ALTER TABLE `AirlineReviewsOverallScore` ENABLE KEYS */;
+-- UNLOCK TABLES;
